@@ -126,6 +126,28 @@ function normalizeGender(g: unknown): Gender {
 const PAL_IDS = new Set(PALS.map((p) => p.id));
 const PASSIVE_IDS = new Set(PASSIVES.map((p) => p.id));
 
+// 詞條比對表：id / 中文名 / 英文名 都能對到 id（模型有時回名字而非 id）
+const PASSIVE_BY_NAME = new Map<string, string>();
+for (const p of PASSIVES) {
+  if (p.name_zh) PASSIVE_BY_NAME.set(p.name_zh, p.id);
+  if (p.name_en) PASSIVE_BY_NAME.set(p.name_en.toLowerCase(), p.id);
+}
+// 模型常見的直譯/別名 → 我們的 id
+const PASSIVE_ALIAS: Record<string, string> = {
+  brain: 'musclehead', // 「腦筋」常被直譯成 brain
+};
+
+/** 把模型回傳的詞條（可能是 id / 中文 / 英文 / 別名）解析成我們的 passive id。 */
+function resolvePassiveId(raw: string): string | null {
+  const k = raw.trim();
+  if (PASSIVE_IDS.has(k)) return k;
+  if (PASSIVE_BY_NAME.has(k)) return PASSIVE_BY_NAME.get(k)!;
+  const lk = k.toLowerCase();
+  if (PASSIVE_BY_NAME.has(lk)) return PASSIVE_BY_NAME.get(lk)!;
+  if (PASSIVE_ALIAS[lk]) return PASSIVE_ALIAS[lk];
+  return null;
+}
+
 function getPalLabel(id: string): string {
   const p = PALS.find((x) => x.id === id);
   if (!p) return id;
@@ -165,14 +187,13 @@ export function parseVisionJson(rawText: string): VisionParsedPal[] {
       warnings.push(`pal_id "${palId}" 不在名稱表內,已清空`);
       palId = '';
     }
-    const passives = (it.passives ?? []).filter((p): p is string => {
-      if (!p) return false;
-      if (!PASSIVE_IDS.has(p)) {
-        warnings.push(`詞條 "${p}" 不在名稱表內,已忽略`);
-        return false;
-      }
-      return true;
-    });
+    const passives: string[] = [];
+    for (const raw of it.passives ?? []) {
+      if (!raw) continue;
+      const id = resolvePassiveId(raw);
+      if (id) passives.push(id);
+      else warnings.push(`詞條 "${raw}" 不在名稱表內,已忽略`);
+    }
 
     return {
       pal_id: palId,
