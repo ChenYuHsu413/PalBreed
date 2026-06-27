@@ -26,7 +26,24 @@ const ROLE_ZH: Record<PalRole, string> = {
 
 // 名稱 → 資料（解析 AI 回傳時用；對不到就丟，雙重防幻覺）
 const PAL_BY_ZH = new Map(PALS.map((p) => [p.name_zh, p]));
-const PASSIVE_BY_ZH = new Map(PASSIVES.map((p) => [p.name_zh, p]));
+
+const PASSIVE_BY_KEY = new Map<string, (typeof PASSIVES)[number]>();
+for (const p of PASSIVES) {
+  PASSIVE_BY_KEY.set(p.name_zh, p);
+  PASSIVE_BY_KEY.set(p.name_en.toLowerCase(), p);
+  PASSIVE_BY_KEY.set(p.id, p);
+}
+function resolvePassive(name: string) {
+  return PASSIVE_BY_KEY.get(name) ?? PASSIVE_BY_KEY.get(name.toLowerCase().trim()) ?? null;
+}
+
+const PASSIVE_CAT_ZH: Record<string, string> = {
+  combat: '戰鬥',
+  mount: '移動/坐騎',
+  work: '工作',
+  utility: '通用',
+  element: '屬性',
+};
 
 interface RecPal {
   name: string;
@@ -56,14 +73,23 @@ function buildPrompt(pals: OwnedPal[]): string {
     }
   );
 
-  const passiveNames = PASSIVES.filter((p) => !p.is_negative).map((p) => p.name_zh);
+  // 詞條依分類列出，讓 AI 替不同角色挑對的真實詞條
+  const byCat: Record<string, string[]> = {};
+  for (const p of PASSIVES) {
+    if (p.is_negative) continue;
+    const cat = PASSIVE_CAT_ZH[p.category] ?? p.category;
+    (byCat[cat] ??= []).push(p.name_zh);
+  }
+  const passiveLines = Object.entries(byCat).map(
+    ([cat, names]) => `${cat}：${names.join('、')}`
+  );
 
   return [
     '== 強力候選清單（name 只能從這裡照抄）==',
     pool.join('\n'),
     '',
-    '== 可用詞條（passives 只能從這些照抄）==',
-    passiveNames.join('、'),
+    '== 可用詞條（passives 只能從這些照抄；沒有通用的「攻擊力提升/力量」，攻擊請選戰鬥類具名詞條如 兇猛/鬼神/腦筋/勇敢）==',
+    passiveLines.join('\n'),
     '',
     '== 我已擁有 ==',
     ownedNames.length ? ownedNames.join('、') : '（目前沒有任何帕魯）',
@@ -186,17 +212,20 @@ function RoleGroup({ group }: { group: RecGroup }) {
                 {pal.name_zh}
               </span>
             </div>
-            {rp.passives && rp.passives.length > 0 && (
-              <div className="mb-1 flex flex-wrap gap-1">
-                {rp.passives.map((name) => (
-                  <PassiveTag
-                    key={name}
-                    passive={PASSIVE_BY_ZH.get(name)}
-                    fallbackId={name}
-                  />
-                ))}
-              </div>
-            )}
+            {(() => {
+              // 只顯示對得到我們資料的詞條；對不到的(AI 自編)直接丟
+              const resolved = (rp.passives ?? [])
+                .map(resolvePassive)
+                .filter((x): x is NonNullable<typeof x> => !!x);
+              if (resolved.length === 0) return null;
+              return (
+                <div className="mb-1 flex flex-wrap gap-1">
+                  {resolved.map((pv) => (
+                    <PassiveTag key={pv.id} passive={pv} fallbackId={pv.id} />
+                  ))}
+                </div>
+              );
+            })()}
             {rp.reason && (
               <p className="text-[11px] text-slate-300">{rp.reason}</p>
             )}
