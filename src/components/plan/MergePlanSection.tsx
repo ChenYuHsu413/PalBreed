@@ -18,6 +18,7 @@ import { MissingParentHelper } from './MissingParentHelper';
 import { PassiveTransferHelper } from './PassiveTransferHelper';
 import { BreedingOddsBlock } from './BreedingOddsBlock';
 import { ShortestBreedBlock } from './ShortestBreedBlock';
+import { canBreedFromOthers } from '../../services/paldbBreed';
 
 const PAIRING_UI: Record<
   PairingStatus,
@@ -432,7 +433,7 @@ function RecommendedStrategy({
           </div>
           {notCovered.length > 0 && (
             <p className="mt-2 text-amber-200">
-              ⚠ 缺 {notCovered.length} 個詞條無法從此組合直接提供。每個缺詞條下方提供轉移路線。
+              ⚠ 缺 {notCovered.length} 個詞條無法從此組合直接提供。每個缺詞條的取得方式見下方。
             </p>
           )}
           {notCovered.length > 0 && (
@@ -469,6 +470,13 @@ function MissingPassivesTransferList({
   ownedPals: import('../../types/owned').OwnedPal[];
   comboParents: import('../../types/pal').Pal[];
 }) {
+  // 組合的親代物種若都無法由「其他物種」配出（特殊配種產物 / 同種死路），
+  // 就沒辦法把詞條轉移進來——直接說明，不再列無效的轉移路線。
+  const isDeadEnd =
+    comboParents.length > 0 &&
+    comboParents.every((p) => !canBreedFromOthers(p.id));
+  const speciesLabel = comboParents.map((p) => p.name_zh).join('／');
+
   return (
     <div className="mt-2 space-y-2">
       {missing.map((passiveId) => {
@@ -489,22 +497,29 @@ function MissingPassivesTransferList({
             <div className="mb-1 flex items-center gap-1.5">
               <span className="font-mono text-rose-400">✗</span>
               <PassiveTag passive={getPassive(passiveId)} fallbackId={passiveId} />
-              {carriers.length === 0 && (
+              {!isDeadEnd && carriers.length === 0 && (
                 <span className="text-[11px] text-amber-300">
                   素材庫沒有任何個體帶此詞條
                 </span>
               )}
             </div>
-            {carriers.map(({ ownedPal, pal }) => (
-              <PassiveTransferHelper
-                key={ownedPal.owned_id}
-                passive={getPassive(passiveId)}
-                passiveId={passiveId}
-                fromPal={pal}
-                fromNickname={ownedPal.nickname}
-                toPals={comboParents}
-              />
-            ))}
+            {isDeadEnd ? (
+              <p className="text-[11px] text-amber-300">
+                {speciesLabel} 是特殊配種產物，無法由其他物種配出，因此此詞條無法透過配種轉移進來。
+                只能直接抓 / 養出本身已帶此詞條的 {speciesLabel}，再用同種配種純化。
+              </p>
+            ) : (
+              carriers.map(({ ownedPal, pal }) => (
+                <PassiveTransferHelper
+                  key={ownedPal.owned_id}
+                  passive={getPassive(passiveId)}
+                  passiveId={passiveId}
+                  fromPal={pal}
+                  fromNickname={ownedPal.nickname}
+                  toPals={comboParents}
+                />
+              ))
+            )}
           </div>
         );
       })}

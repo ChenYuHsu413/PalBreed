@@ -48,6 +48,17 @@ function breedChildId(aId: string, bId: string): string | null {
   return PAIR_TO_CHILD.get(pairKey(aId, bId)) ?? null;
 }
 
+/**
+ * 此物種能否由「其他物種」配種產生？
+ * 若它的父母組合只有同種（X×X）或根本沒有，代表是特殊配種產物 / 死路——
+ * 無法從別的物種把詞條轉移進來。
+ */
+export function canBreedFromOthers(palId: string): boolean {
+  const pairs = CHILD_TO_PARENTS[palId];
+  if (!pairs || pairs.length === 0) return false;
+  return pairs.some(([a, b]) => a !== palId || b !== palId);
+}
+
 /** 透過 paldb_id 算 (父A × 父B) = 子代 paldb_id（相容舊介面，回 Promise）。 */
 export async function breedPair(
   parentA: string,
