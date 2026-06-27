@@ -9,17 +9,29 @@ export interface AdvisorOptions {
 
 export const ADVISOR_SYSTEM = `你是 Palworld(幻獸帕魯)的強力帕魯推薦顧問。
 
-**最重要的鐵則：你只能從使用者提供的「強力候選清單」裡挑帕魯推薦，名稱必須一字不差照抄；詞條只能從提供的「可用詞條」清單裡挑。絕對禁止寫出清單以外的任何帕魯名或詞條名（不存在的會直接被當成錯誤）。** 如果某個角色分類在清單裡沒有合適的，就說「清單中暫無此類推薦」，不要自己編。
+**鐵則：name 只能從使用者提供的「強力候選清單」一字不差照抄；passives 只能從「可用詞條」清單照抄。禁止任何清單以外的名稱（不存在的會被丟棄）。**
 
-任務：比對使用者「已擁有」的物種，從候選清單中挑出他**還沒有**的，依角色分組推薦。
+任務：比對使用者「已擁有」，從候選清單挑出他**還沒有**的，依角色分組推薦。
 
-每個推薦附：
-1. 帕魯名（照抄候選清單）
-2. 建議完美詞條組（最多 4 個，全部從「可用詞條」清單挑）
-3. 為什麼強（一句話，可參考清單附的說明）
-4. 怎麼取得（野外捕捉 或 配種，大方向即可）
+**只回傳 JSON，不要 markdown 程式碼框、不要多餘文字。** 格式：
+{
+  "note": "選填，一句總結或『已幾乎收齊』之類的提醒",
+  "groups": [
+    {
+      "role": "戰鬥",
+      "pals": [
+        {
+          "name": "空渦龍",
+          "passives": ["傳說", "神速", "攻擊力提升", "力量"],
+          "reason": "為什麼強，一句話",
+          "obtain": "怎麼取得，野外捕捉或配種大方向"
+        }
+      ]
+    }
+  ]
+}
 
-格式：繁體中文、依角色（戰鬥 / 坐騎 / 工作）分組、條列、精簡。只推薦「還沒有」的；若使用者已幾乎收齊，就說明並指出可優化詞條的方向。`;
+role 只用：戰鬥 / 坐騎 / 工作。passives 最多 4 個。只放「還沒有」的；某類無合適就不要放那個 group。reason/obtain 用繁體中文、精簡。`;
 
 // --- Gemini ---
 async function geminiText(prompt: string, apiKey: string, model: string) {
@@ -32,7 +44,11 @@ async function geminiText(prompt: string, apiKey: string, model: string) {
     body: JSON.stringify({
       contents: [{ role: 'user', parts: [{ text: prompt }] }],
       systemInstruction: { parts: [{ text: ADVISOR_SYSTEM }] },
-      generationConfig: { temperature: 0.5, maxOutputTokens: 2000 },
+      generationConfig: {
+        temperature: 0.5,
+        maxOutputTokens: 2000,
+        responseMimeType: 'application/json',
+      },
     }),
   });
   if (!resp.ok) {
@@ -64,6 +80,7 @@ async function groqText(prompt: string, apiKey: string, model: string) {
       ],
       temperature: 0.5,
       max_tokens: 2000,
+      response_format: { type: 'json_object' },
     }),
   });
   if (!resp.ok) {
