@@ -4,20 +4,51 @@ import {
   useSettingsStore,
   activeProviderCreds,
 } from '../../store/useSettingsStore';
-import { getPal } from '../../data';
+import { PALS, PASSIVES, getPal } from '../../data';
 import type { OwnedPal } from '../../types/owned';
+import type { PalRole } from '../../types/pal';
 import { getAdvice } from '../../services/advisor';
 import { Button } from '../common/Button';
 
+const ROLE_ZH: Record<PalRole, string> = {
+  combat: '戰鬥',
+  mount: '坐騎',
+  mount_speed: '坐騎(速度)',
+  base_worker: '據點工作',
+  mining: '採礦',
+  handiwork: '製作',
+  lumbering: '伐木',
+  transporting: '搬運',
+  support: '輔助',
+};
+
 function buildPrompt(pals: OwnedPal[]): string {
-  // 去重的已擁有物種清單（推薦缺口只需知道「有哪些物種」）
-  const species = [...new Set(pals.map((p) => getPal(p.pal_id)?.name_zh ?? p.pal_id))];
+  const owned = new Set(pals.map((p) => p.pal_id));
+  const ownedNames = [...new Set(pals.map((p) => getPal(p.pal_id)?.name_zh ?? p.pal_id))];
+
+  // 候選白名單 = 有策劃過角色的強力帕魯；標記是否已擁有
+  const pool = PALS.filter((p) => p.recommended_roles && p.recommended_roles.length > 0).map(
+    (p) => {
+      const roles = p.recommended_roles.map((r) => ROLE_ZH[r] ?? r).join('、');
+      const mark = owned.has(p.id) ? '[已擁有] ' : '';
+      const note = p.note ? `｜${p.note}` : '';
+      return `- ${mark}${p.name_zh}｜角色:${roles}${note}`;
+    }
+  );
+
+  const passiveNames = PASSIVES.filter((p) => !p.is_negative).map((p) => p.name_zh);
 
   return [
-    `== 我已擁有的帕魯物種（${species.length} 種）==`,
-    species.length ? species.join('、') : '（目前沒有任何帕魯）',
+    '== 強力候選清單（只能從這裡推薦，名稱照抄）==',
+    pool.join('\n'),
     '',
-    '請推薦我「還沒有」的社群公認強力帕魯與其完美詞條組合，分戰鬥／坐騎／據點工作三類。',
+    '== 可用詞條（建議詞條只能從這些挑）==',
+    passiveNames.join('、'),
+    '',
+    `== 我已擁有 ==`,
+    ownedNames.length ? ownedNames.join('、') : '（目前沒有任何帕魯）',
+    '',
+    '請從「強力候選清單」中，挑出我「還沒有（沒標 [已擁有]）」的，依角色分組推薦。',
   ].join('\n');
 }
 
