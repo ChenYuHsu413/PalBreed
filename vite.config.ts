@@ -1,7 +1,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  // GitHub Pages 專案站台在 /PalBreed/ 子路徑；dev 維持根路徑
+  base: command === 'build' ? '/PalBreed/' : '/',
   plugins: [react()],
   server: {
     port: 5173,
@@ -18,4 +20,4 @@ export default defineConfig({
       },
     },
   },
-});
+}));
