@@ -1,0 +1,3185 @@
+[
+  {
+    "id": "lamball",
+    "name_en": "Lamball",
+    "name_zh": "棉悠悠",
+    "paldb_id": "SheepBall",
+    "paldex": "1",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "cattiva",
+    "name_en": "Cattiva",
+    "name_zh": "搗蛋貓",
+    "paldb_id": "PinkCat",
+    "paldex": "2",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "chikipi",
+    "name_en": "Chikipi",
+    "name_zh": "皮皮雞",
+    "paldb_id": "ChickenPal",
+    "paldex": "3",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "lifmunk",
+    "name_en": "Lifmunk",
+    "name_zh": "翠葉鼠",
+    "paldb_id": "Carbunclo",
+    "paldex": "4",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "foxparks",
+    "name_en": "Foxparks",
+    "name_zh": "火絨狐",
+    "paldb_id": "Kitsunebi",
+    "paldex": "5",
+    "elements": [
+      "Fire"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "foxparks_cryst",
+    "name_en": "Foxparks Cryst",
+    "name_zh": "雪絨狐",
+    "paldb_id": "Kitsunebi_Ice",
+    "paldex": "5B",
+    "elements": [
+      "Ice"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "fuack",
+    "name_en": "Fuack",
+    "name_zh": "衝浪鴨",
+    "paldb_id": "BluePlatypus",
+    "paldex": "6",
+    "elements": [
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "fuack_ignis",
+    "name_en": "Fuack Ignis",
+    "name_zh": "熱浪鴨",
+    "paldb_id": "BluePlatypus_Fire",
+    "paldex": "6B",
+    "elements": [
+      "Water",
+      "Fire"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "sparkit",
+    "name_en": "Sparkit",
+    "name_zh": "伏特喵",
+    "paldb_id": "ElecCat",
+    "paldex": "7",
+    "elements": [
+      "Electric"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "tanzee",
+    "name_en": "Tanzee",
+    "name_zh": "新葉猿",
+    "paldb_id": "Monkey",
+    "paldex": "8",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "rooby",
+    "name_en": "Rooby",
+    "name_zh": "燎火鹿",
+    "paldb_id": "FlameBambi",
+    "paldex": "9",
+    "elements": [
+      "Fire"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "pengullet",
+    "name_en": "Pengullet",
+    "name_zh": "企丸丸",
+    "paldb_id": "Penguin",
+    "paldex": "10",
+    "elements": [
+      "Water",
+      "Ice"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "pengullet_lux",
+    "name_en": "Pengullet Lux",
+    "name_zh": "閃丸丸",
+    "paldb_id": "Penguin_Electric",
+    "paldex": "10B",
+    "elements": [
+      "Water",
+      "Electric"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "penking",
+    "name_en": "Penking",
+    "name_zh": "企丸王",
+    "paldb_id": "CaptainPenguin",
+    "paldex": "11",
+    "elements": [
+      "Water",
+      "Ice"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "penking_lux",
+    "name_en": "Penking Lux",
+    "name_zh": "閃丸王",
+    "paldb_id": "CaptainPenguin_Black",
+    "paldex": "11B",
+    "elements": [
+      "Water",
+      "Electric"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "jolthog",
+    "name_en": "Jolthog",
+    "name_zh": "電棘鼠",
+    "paldb_id": "Hedgehog",
+    "paldex": "12",
+    "elements": [
+      "Electric"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "jolthog_cryst",
+    "name_en": "Jolthog Cryst",
+    "name_zh": "冰刺鼠",
+    "paldb_id": "Hedgehog_Ice",
+    "paldex": "12B",
+    "elements": [
+      "Ice"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "gumoss",
+    "name_en": "Gumoss",
+    "name_zh": "葉泥泥",
+    "paldb_id": "PlantSlime",
+    "paldex": "13",
+    "elements": [
+      "Grass",
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "vixy",
+    "name_en": "Vixy",
+    "name_zh": "玉藻狐",
+    "paldb_id": "CuteFox",
+    "paldex": "14",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "hoocrates",
+    "name_en": "Hoocrates",
+    "name_zh": "啼卡爾",
+    "paldb_id": "WizardOwl",
+    "paldex": "15",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "teafant",
+    "name_en": "Teafant",
+    "name_zh": "壺小象",
+    "paldb_id": "Ganesha",
+    "paldex": "16",
+    "elements": [
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "depresso",
+    "name_en": "Depresso",
+    "name_zh": "瞅什魔",
+    "paldb_id": "NegativeKoala",
+    "paldex": "17",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "cremis",
+    "name_en": "Cremis",
+    "name_zh": "米露菲",
+    "paldb_id": "WoolFox",
+    "paldex": "18",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "daedream",
+    "name_en": "Daedream",
+    "name_zh": "寐魔",
+    "paldb_id": "DreamDemon",
+    "paldex": "19",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "rushoar",
+    "name_en": "Rushoar",
+    "name_zh": "草莽豬",
+    "paldb_id": "Boar",
+    "paldex": "20",
+    "elements": [
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "nox",
+    "name_en": "Nox",
+    "name_zh": "露娜蒂",
+    "paldb_id": "NightFox",
+    "paldex": "21",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "fuddler",
+    "name_en": "Fuddler",
+    "name_zh": "遁地鼠",
+    "paldb_id": "CuteMole",
+    "paldex": "22",
+    "elements": [
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "killamari",
+    "name_en": "Killamari",
+    "name_zh": "勾魂魷",
+    "paldb_id": "NegativeOctopus",
+    "paldex": "23",
+    "elements": [
+      "Dark",
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "killamari_primo",
+    "name_en": "Killamari Primo",
+    "name_zh": "蝕魂魷",
+    "paldb_id": "NegativeOctopus_Neutral",
+    "paldex": "23B",
+    "elements": [
+      "Neutral",
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "mau",
+    "name_en": "Mau",
+    "name_zh": "喵絲特",
+    "paldb_id": "Bastet",
+    "paldex": "24",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "mau_cryst",
+    "name_en": "Mau Cryst",
+    "name_zh": "冰絲特",
+    "paldb_id": "Bastet_Ice",
+    "paldex": "24B",
+    "elements": [
+      "Ice"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "celaray",
+    "name_en": "Celaray",
+    "name_zh": "魯米兒",
+    "paldb_id": "FlyingManta",
+    "paldex": "25",
+    "elements": [
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "celaray_lux",
+    "name_en": "Celaray Lux",
+    "name_zh": "雷米兒",
+    "paldb_id": "FlyingManta_Thunder",
+    "paldex": "25B",
+    "elements": [
+      "Water",
+      "Electric"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "direhowl",
+    "name_en": "Direhowl",
+    "name_zh": "獵狼",
+    "paldb_id": "Garm",
+    "paldex": "26",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "tocotoco",
+    "name_en": "Tocotoco",
+    "name_zh": "炸蛋鳥",
+    "paldb_id": "ColorfulBird",
+    "paldex": "27",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "flopie",
+    "name_en": "Flopie",
+    "name_zh": "波娜兔",
+    "paldb_id": "FlowerRabbit",
+    "paldex": "28",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "mozzarina",
+    "name_en": "Mozzarina",
+    "name_zh": "波霸牛",
+    "paldb_id": "CowPal",
+    "paldex": "29",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "bristla",
+    "name_en": "Bristla",
+    "name_zh": "荊棘魔仙",
+    "paldb_id": "LittleBriarRose",
+    "paldex": "30",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "gobfin",
+    "name_en": "Gobfin",
+    "name_zh": "鯊小子",
+    "paldb_id": "SharkKid",
+    "paldex": "31",
+    "elements": [
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "gobfin_ignis",
+    "name_en": "Gobfin Ignis",
+    "name_zh": "紅小鯊",
+    "paldb_id": "SharkKid_Fire",
+    "paldex": "31B",
+    "elements": [
+      "Fire"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "hangyu",
+    "name_en": "Hangyu",
+    "name_zh": "吊縛靈",
+    "paldb_id": "WindChimes",
+    "paldex": "32",
+    "elements": [
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "hangyu_cryst",
+    "name_en": "Hangyu Cryst",
+    "name_zh": "冰縛靈",
+    "paldb_id": "WindChimes_Ice",
+    "paldex": "32B",
+    "elements": [
+      "Ice"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "mossanda",
+    "name_en": "Mossanda",
+    "name_zh": "葉胖達",
+    "paldb_id": "GrassPanda",
+    "paldex": "33",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "mossanda_lux",
+    "name_en": "Mossanda Lux",
+    "name_zh": "雷胖達",
+    "paldb_id": "GrassPanda_Electric",
+    "paldex": "33B",
+    "elements": [
+      "Electric"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "woolipop",
+    "name_en": "Woolipop",
+    "name_zh": "棉花糖",
+    "paldb_id": "SweetsSheep",
+    "paldex": "34",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "caprity",
+    "name_en": "Caprity",
+    "name_zh": "灌木羊",
+    "paldb_id": "BerryGoat",
+    "paldex": "35",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "caprity_noct",
+    "name_en": "Caprity Noct",
+    "name_zh": "鬱木羊",
+    "paldb_id": "BerryGoat_Dark",
+    "paldex": "35B",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "melpaca",
+    "name_en": "Melpaca",
+    "name_zh": "美露帕",
+    "paldb_id": "Alpaca",
+    "paldex": "36",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "eikthyrdeer",
+    "name_en": "Eikthyrdeer",
+    "name_zh": "紫霞鹿",
+    "paldb_id": "Deer",
+    "paldex": "37",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "eikthyrdeer_terra",
+    "name_en": "Eikthyrdeer Terra",
+    "name_zh": "祇岳鹿",
+    "paldb_id": "Deer_Ground",
+    "paldex": "37B",
+    "elements": [
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "nitewing",
+    "name_en": "Nitewing",
+    "name_zh": "疾風隼",
+    "paldb_id": "HawkBird",
+    "paldex": "38",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "ribbuny",
+    "name_en": "Ribbuny",
+    "name_zh": "姬小兔",
+    "paldb_id": "PinkRabbit",
+    "paldex": "39",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "ribbuny_botan",
+    "name_en": "Ribbuny Botan",
+    "name_zh": "艾小兔",
+    "paldb_id": "PinkRabbit_Grass",
+    "paldex": "39B",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "incineram",
+    "name_en": "Incineram",
+    "name_zh": "炎魔羊",
+    "paldb_id": "Baphomet",
+    "paldex": "40",
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "incineram_noct",
+    "name_en": "Incineram Noct",
+    "name_zh": "闇魔羊",
+    "paldb_id": "Baphomet_Dark",
+    "paldex": "40B",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "cinnamoth",
+    "name_en": "Cinnamoth",
+    "name_zh": "幻悅蝶",
+    "paldb_id": "CuteButterfly",
+    "paldex": "41",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "arsox",
+    "name_en": "Arsox",
+    "name_zh": "熾焰牛",
+    "paldb_id": "FlameBuffalo",
+    "paldex": "42",
+    "elements": [
+      "Fire"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "dumud",
+    "name_en": "Dumud",
+    "name_zh": "趴趴鯰",
+    "paldb_id": "LazyCatfish",
+    "paldex": "43",
+    "elements": [
+      "Ground",
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "dumud_gild",
+    "name_en": "Dumud Gild",
+    "name_zh": "梆梆鯰",
+    "paldb_id": "LazyCatfish_Gold",
+    "paldex": "43B",
+    "elements": [
+      "Ground",
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "cawgnito",
+    "name_en": "Cawgnito",
+    "name_zh": "黑鴉隱士",
+    "paldb_id": "DarkCrow",
+    "paldex": "44",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "leezpunk",
+    "name_en": "Leezpunk",
+    "name_zh": "龐克蜥",
+    "paldb_id": "LizardMan",
+    "paldex": "45",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "leezpunk_ignis",
+    "name_en": "Leezpunk Ignis",
+    "name_zh": "熱血蜥",
+    "paldb_id": "LizardMan_Fire",
+    "paldex": "45B",
+    "elements": [
+      "Fire"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "loupmoon",
+    "name_en": "Loupmoon",
+    "name_zh": "月鐮魔",
+    "paldb_id": "Werewolf",
+    "paldex": "46",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "loupmoon_cryst",
+    "name_en": "Loupmoon Cryst",
+    "name_zh": "霜鐮魔",
+    "paldb_id": "Werewolf_Ice",
+    "paldex": "46B",
+    "elements": [
+      "Ice"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "galeclaw",
+    "name_en": "Galeclaw",
+    "name_zh": "天擒鳥",
+    "paldb_id": "Eagle",
+    "paldex": "47",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "robinquill",
+    "name_en": "Robinquill",
+    "name_zh": "羽箭射手",
+    "paldb_id": "RobinHood",
+    "paldex": "48",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "robinquill_terra",
+    "name_en": "Robinquill Terra",
+    "name_zh": "山岳射手",
+    "paldb_id": "RobinHood_Ground",
+    "paldex": "48B",
+    "elements": [
+      "Grass",
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "gorirat",
+    "name_en": "Gorirat",
+    "name_zh": "鐵拳猿",
+    "paldb_id": "Gorilla",
+    "paldex": "49",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "gorirat_terra",
+    "name_en": "Gorirat Terra",
+    "name_zh": "石掌猿",
+    "paldb_id": "Gorilla_Ground",
+    "paldex": "49B",
+    "elements": [
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "beegarde",
+    "name_en": "Beegarde",
+    "name_zh": "騎士蜂",
+    "paldb_id": "SoldierBee",
+    "paldex": "50",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "elizabee",
+    "name_en": "Elizabee",
+    "name_zh": "女皇蜂",
+    "paldb_id": "QueenBee",
+    "paldex": "51",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "grintale",
+    "name_en": "Grintale",
+    "name_zh": "笑魘猫",
+    "paldb_id": "NaughtyCat",
+    "paldex": "52",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "swee",
+    "name_en": "Swee",
+    "name_zh": "毛撣兒",
+    "paldb_id": "MopBaby",
+    "paldex": "53",
+    "elements": [
+      "Ice"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "sweepa",
+    "name_en": "Sweepa",
+    "name_zh": "毛老爹",
+    "paldb_id": "MopKing",
+    "paldex": "54",
+    "elements": [
+      "Ice"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "chillet",
+    "name_en": "Chillet",
+    "name_zh": "疾旋鼬",
+    "paldb_id": "WeaselDragon",
+    "paldex": "55",
+    "elements": [
+      "Ice",
+      "Dragon"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "chillet_ignis",
+    "name_en": "Chillet Ignis",
+    "name_zh": "桃旋鼬",
+    "paldb_id": "WeaselDragon_Fire",
+    "paldex": "55B",
+    "elements": [
+      "Fire",
+      "Dragon"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "univolt",
+    "name_en": "Univolt",
+    "name_zh": "雷角馬",
+    "paldb_id": "Kirin",
+    "paldex": "56",
+    "elements": [
+      "Electric"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "foxcicle",
+    "name_en": "Foxcicle",
+    "name_zh": "吹雪狐",
+    "paldb_id": "IceFox",
+    "paldex": "57",
+    "elements": [
+      "Ice"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "pyrin",
+    "name_en": "Pyrin",
+    "name_zh": "火麒麟",
+    "paldb_id": "FireKirin",
+    "paldex": "58",
+    "elements": [
+      "Fire"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "pyrin_noct",
+    "name_en": "Pyrin Noct",
+    "name_zh": "邪麒麟",
+    "paldb_id": "FireKirin_Dark",
+    "paldex": "58B",
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "reindrix",
+    "name_en": "Reindrix",
+    "name_zh": "嚴冬鹿",
+    "paldb_id": "IceDeer",
+    "paldex": "59",
+    "elements": [
+      "Ice"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "rayhound",
+    "name_en": "Rayhound",
+    "name_zh": "霹靂犬",
+    "paldb_id": "ThunderDog",
+    "paldex": "60",
+    "elements": [
+      "Electric"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "kitsun",
+    "name_en": "Kitsun",
+    "name_zh": "蒼焰狼",
+    "paldb_id": "AmaterasuWolf",
+    "paldex": "61",
+    "elements": [
+      "Fire"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "kitsun_noct",
+    "name_en": "Kitsun Noct",
+    "name_zh": "幽焰狼",
+    "paldb_id": "AmaterasuWolf_Dark",
+    "paldex": "61B",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "dazzi",
+    "name_en": "Dazzi",
+    "name_zh": "雷鳴童子",
+    "paldb_id": "RaijinDaughter",
+    "paldex": "62",
+    "elements": [
+      "Electric"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "dazzi_noct",
+    "name_en": "Dazzi Noct",
+    "name_zh": "天陰童子",
+    "paldb_id": "RaijinDaughter_Water",
+    "paldex": "62B",
+    "elements": [
+      "Dark",
+      "Electric"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "lunaris",
+    "name_en": "Lunaris",
+    "name_zh": "秘斯媞雅",
+    "paldb_id": "Mutant",
+    "paldex": "63",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "dinossom",
+    "name_en": "Dinossom",
+    "name_zh": "花冠龍",
+    "paldb_id": "FlowerDinosaur",
+    "paldex": "64",
+    "elements": [
+      "Grass",
+      "Dragon"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "dinossom_lux",
+    "name_en": "Dinossom Lux",
+    "name_zh": "雷冠龍",
+    "paldb_id": "FlowerDinosaur_Electric",
+    "paldex": "64B",
+    "elements": [
+      "Electric",
+      "Dragon"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "surfent",
+    "name_en": "Surfent",
+    "name_zh": "滑水蛇",
+    "paldb_id": "Serpent",
+    "paldex": "65",
+    "elements": [
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "surfent_terra",
+    "name_en": "Surfent Terra",
+    "name_zh": "流沙蛇",
+    "paldb_id": "Serpent_Ground",
+    "paldex": "65B",
+    "elements": [
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "maraith",
+    "name_en": "Maraith",
+    "name_zh": "噬魂獸",
+    "paldb_id": "GhostBeast",
+    "paldex": "66",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "digtoise",
+    "name_en": "Digtoise",
+    "name_zh": "碎岩龜",
+    "paldb_id": "DrillGame",
+    "paldex": "67",
+    "elements": [
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "tombat",
+    "name_en": "Tombat",
+    "name_zh": "貓蝠怪",
+    "paldb_id": "CatBat",
+    "paldex": "68",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "lovander",
+    "name_en": "Lovander",
+    "name_zh": "博愛蜥",
+    "paldb_id": "PinkLizard",
+    "paldex": "69",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "flambelle",
+    "name_en": "Flambelle",
+    "name_zh": "融焰娘",
+    "paldb_id": "LavaGirl",
+    "paldex": "70",
+    "elements": [
+      "Fire"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "vanwyrm",
+    "name_en": "Vanwyrm",
+    "name_zh": "烽歌龍",
+    "paldb_id": "BirdDragon",
+    "paldex": "71",
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "vanwyrm_cryst",
+    "name_en": "Vanwyrm Cryst",
+    "name_zh": "霜歌龍",
+    "paldb_id": "BirdDragon_Ice",
+    "paldex": "71B",
+    "elements": [
+      "Ice",
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "bushi",
+    "name_en": "Bushi",
+    "name_zh": "浪刃武士",
+    "paldb_id": "Ronin",
+    "paldex": "72",
+    "elements": [
+      "Fire"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "bushi_noct",
+    "name_en": "Bushi Noct",
+    "name_zh": "鬼刃武士",
+    "paldb_id": "Ronin_Dark",
+    "paldex": "72B",
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "beakon",
+    "name_en": "Beakon",
+    "name_zh": "迅雷鳥",
+    "paldb_id": "ThunderBird",
+    "paldex": "73",
+    "elements": [
+      "Electric"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "ragnahawk",
+    "name_en": "Ragnahawk",
+    "name_zh": "燧火鳥",
+    "paldb_id": "RedArmorBird",
+    "paldex": "74",
+    "elements": [
+      "Fire"
+    ],
+    "roles": [
+      "combat",
+      "mount"
+    ],
+    "recommended_roles": [
+      "combat",
+      "mount"
+    ],
+    "priority": "B"
+  },
+  {
+    "id": "katress",
+    "name_en": "Katress",
+    "name_zh": "闇巫貓",
+    "paldb_id": "CatMage",
+    "paldex": "75",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "katress_ignis",
+    "name_en": "Katress Ignis",
+    "name_zh": "熾巫貓",
+    "paldb_id": "CatMage_Fire",
+    "paldex": "75B",
+    "elements": [
+      "Dark",
+      "Fire"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "wixen",
+    "name_en": "Wixen",
+    "name_zh": "焰巫狐",
+    "paldb_id": "FoxMage",
+    "paldex": "76",
+    "elements": [
+      "Fire"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "wixen_noct",
+    "name_en": "Wixen Noct",
+    "name_zh": "幽巫狐",
+    "paldb_id": "FoxMage_Dark",
+    "paldex": "76B",
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "verdash",
+    "name_en": "Verdash",
+    "name_zh": "踏春兔",
+    "paldb_id": "GrassRabbitMan",
+    "paldex": "77",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "vaelet",
+    "name_en": "Vaelet",
+    "name_zh": "薇莉塔",
+    "paldb_id": "VioletFairy",
+    "paldex": "78",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "sibelyx",
+    "name_en": "Sibelyx",
+    "name_zh": "綢笠蛾",
+    "paldb_id": "WhiteMoth",
+    "paldex": "79",
+    "elements": [
+      "Ice"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "elphidran",
+    "name_en": "Elphidran",
+    "name_zh": "精靈龍",
+    "paldb_id": "FairyDragon",
+    "paldex": "80",
+    "elements": [
+      "Dragon"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "elphidran_aqua",
+    "name_en": "Elphidran Aqua",
+    "name_zh": "水靈龍",
+    "paldb_id": "FairyDragon_Water",
+    "paldex": "80B",
+    "elements": [
+      "Dragon",
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "kelpsea",
+    "name_en": "Kelpsea",
+    "name_zh": "水靈兒",
+    "paldb_id": "Kelpie",
+    "paldex": "81",
+    "elements": [
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "kelpsea_ignis",
+    "name_en": "Kelpsea Ignis",
+    "name_zh": "火靈兒",
+    "paldb_id": "Kelpie_Fire",
+    "paldex": "81B",
+    "elements": [
+      "Fire"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "azurobe",
+    "name_en": "Azurobe",
+    "name_zh": "碧海龍",
+    "paldb_id": "BlueDragon",
+    "paldex": "82",
+    "elements": [
+      "Water",
+      "Dragon"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "azurobe_cryst",
+    "name_en": "Azurobe Cryst",
+    "name_zh": "碧月龍",
+    "paldb_id": "BlueDragon_Ice",
+    "paldex": "82B",
+    "elements": [
+      "Ice",
+      "Dragon"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "cryolinx",
+    "name_en": "Cryolinx",
+    "name_zh": "冰棘獸",
+    "paldb_id": "WhiteTiger",
+    "paldex": "83",
+    "elements": [
+      "Ice"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "cryolinx_terra",
+    "name_en": "Cryolinx Terra",
+    "name_zh": "金棘獸",
+    "paldb_id": "WhiteTiger_Ground",
+    "paldex": "83B",
+    "elements": [
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "blazehowl",
+    "name_en": "Blazehowl",
+    "name_zh": "獄焰王",
+    "paldb_id": "Manticore",
+    "paldex": "84",
+    "elements": [
+      "Fire"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "blazehowl_noct",
+    "name_en": "Blazehowl Noct",
+    "name_zh": "獄閻王",
+    "paldb_id": "Manticore_Dark",
+    "paldex": "84B",
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "relaxaurus",
+    "name_en": "Relaxaurus",
+    "name_zh": "佩克龍",
+    "paldb_id": "LazyDragon",
+    "paldex": "85",
+    "elements": [
+      "Dragon",
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "relaxaurus_lux",
+    "name_en": "Relaxaurus Lux",
+    "name_zh": "派克龍",
+    "paldb_id": "LazyDragon_Electric",
+    "paldex": "85B",
+    "elements": [
+      "Dragon",
+      "Electric"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "broncherry",
+    "name_en": "Broncherry",
+    "name_zh": "連理龍",
+    "paldb_id": "SakuraSaurus",
+    "paldex": "86",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "broncherry_aqua",
+    "name_en": "Broncherry Aqua",
+    "name_zh": "海誓龍",
+    "paldb_id": "SakuraSaurus_Water",
+    "paldex": "86B",
+    "elements": [
+      "Grass",
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "petallia",
+    "name_en": "Petallia",
+    "name_zh": "花麗娜",
+    "paldb_id": "FlowerDoll",
+    "paldex": "87",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "reptyro",
+    "name_en": "Reptyro",
+    "name_zh": "熔岩獸",
+    "paldb_id": "VolcanicMonster",
+    "paldex": "88",
+    "elements": [
+      "Fire",
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "reptyro_cryst",
+    "name_en": "Reptyro Cryst",
+    "name_zh": "寒霜獸",
+    "paldb_id": "VolcanicMonster_Ice",
+    "paldex": "88B",
+    "elements": [
+      "Ice",
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "kingpaca",
+    "name_en": "Kingpaca",
+    "name_zh": "君王美露帕",
+    "paldb_id": "KingAlpaca",
+    "paldex": "89",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "kingpaca_cryst",
+    "name_en": "Kingpaca Cryst",
+    "name_zh": "冰帝美露帕",
+    "paldb_id": "KingAlpaca_Ice",
+    "paldex": "89B",
+    "elements": [
+      "Ice"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "mammorest",
+    "name_en": "Mammorest",
+    "name_zh": "森猛獁",
+    "paldb_id": "GrassMammoth",
+    "paldex": "90",
+    "elements": [
+      "Grass",
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "mammorest_cryst",
+    "name_en": "Mammorest Cryst",
+    "name_zh": "雪猛獁",
+    "paldb_id": "GrassMammoth_Ice",
+    "paldex": "90B",
+    "elements": [
+      "Ice",
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "wumpo",
+    "name_en": "Wumpo",
+    "name_zh": "白絨雪怪",
+    "paldb_id": "Yeti",
+    "paldex": "91",
+    "elements": [
+      "Ice"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "wumpo_botan",
+    "name_en": "Wumpo Botan",
+    "name_zh": "綠苔絨怪",
+    "paldb_id": "Yeti_Grass",
+    "paldex": "91B",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "warsect",
+    "name_en": "Warsect",
+    "name_zh": "鎧格力斯",
+    "paldb_id": "HerculesBeetle",
+    "paldex": "92",
+    "elements": [
+      "Grass",
+      "Ground"
+    ],
+    "roles": [
+      "combat",
+      "base_worker",
+      "transporting"
+    ],
+    "recommended_roles": [
+      "base_worker"
+    ],
+    "priority": "B"
+  },
+  {
+    "id": "warsect_terra",
+    "name_en": "Warsect Terra",
+    "name_zh": "格魯力斯",
+    "paldb_id": "HerculesBeetle_Ground",
+    "paldex": "92B",
+    "elements": [
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "fenglope",
+    "name_en": "Fenglope",
+    "name_zh": "雲海鹿",
+    "paldb_id": "FengyunDeeper",
+    "paldex": "93",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "fenglope_lux",
+    "name_en": "Fenglope Lux",
+    "name_zh": "雷隱鹿",
+    "paldb_id": "FengyunDeeper_Electric",
+    "paldex": "93B",
+    "elements": [
+      "Electric"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "felbat",
+    "name_en": "Felbat",
+    "name_zh": "夜幕魔蝠",
+    "paldb_id": "CatVampire",
+    "paldex": "94",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "quivern",
+    "name_en": "Quivern",
+    "name_zh": "天羽龍",
+    "paldb_id": "SkyDragon",
+    "paldex": "95",
+    "elements": [
+      "Dragon"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "quivern_botan",
+    "name_en": "Quivern Botan",
+    "name_zh": "翠羽龍",
+    "paldb_id": "SkyDragon_Grass",
+    "paldex": "95B",
+    "elements": [
+      "Dragon",
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "blazamut",
+    "name_en": "Blazamut",
+    "name_zh": "焰煌",
+    "paldb_id": "KingBahamut",
+    "paldex": "96",
+    "elements": [
+      "Fire"
+    ],
+    "roles": [
+      "combat",
+      "mining"
+    ],
+    "recommended_roles": [
+      "combat",
+      "mining"
+    ],
+    "priority": "S",
+    "note": "火屬性 S 級頭目"
+  },
+  {
+    "id": "blazamut_ryu",
+    "name_en": "Blazamut Ryu",
+    "name_zh": "歿殃",
+    "paldb_id": "KingBahamut_Dragon",
+    "paldex": "96B",
+    "elements": [
+      "Dragon",
+      "Fire"
+    ],
+    "roles": [
+      "combat",
+      "mount"
+    ],
+    "recommended_roles": [
+      "combat"
+    ],
+    "priority": "S",
+    "note": "天墜之地系列龍/火 S 級頭目"
+  },
+  {
+    "id": "helzephyr",
+    "name_en": "Helzephyr",
+    "name_zh": "雷冥鳥",
+    "paldb_id": "HadesBird",
+    "paldex": "97",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [
+      "combat",
+      "mount"
+    ],
+    "recommended_roles": [
+      "combat"
+    ],
+    "priority": "S",
+    "note": "暗屬性 S 級頭目"
+  },
+  {
+    "id": "helzephyr_lux",
+    "name_en": "Helzephyr Lux",
+    "name_zh": "雷鳴鳥",
+    "paldb_id": "HadesBird_Electric",
+    "paldex": "97B",
+    "elements": [
+      "Dark",
+      "Electric"
+    ],
+    "roles": [
+      "combat",
+      "mount"
+    ],
+    "recommended_roles": [
+      "combat"
+    ],
+    "priority": "S"
+  },
+  {
+    "id": "astegon",
+    "name_en": "Astegon",
+    "name_zh": "魔淵龍",
+    "paldb_id": "BlackMetalDragon",
+    "paldex": "98",
+    "elements": [
+      "Dark",
+      "Dragon"
+    ],
+    "roles": [
+      "combat",
+      "mining"
+    ],
+    "recommended_roles": [
+      "mining",
+      "combat"
+    ],
+    "priority": "S",
+    "note": "S 級採礦頭目"
+  },
+  {
+    "id": "menasting",
+    "name_en": "Menasting",
+    "name_zh": "冥鎧蠍",
+    "paldb_id": "DarkScorpion",
+    "paldex": "99",
+    "elements": [
+      "Dark",
+      "Ground"
+    ],
+    "roles": [
+      "combat",
+      "mining"
+    ],
+    "recommended_roles": [
+      "combat"
+    ],
+    "priority": "S"
+  },
+  {
+    "id": "menasting_terra",
+    "name_en": "Menasting Terra",
+    "name_zh": "金鎧蠍",
+    "paldb_id": "DarkScorpion_Ground",
+    "paldex": "99B",
+    "elements": [
+      "Ground"
+    ],
+    "roles": [
+      "combat",
+      "mining"
+    ],
+    "recommended_roles": [
+      "combat",
+      "mining"
+    ],
+    "priority": "S"
+  },
+  {
+    "id": "anubis",
+    "name_en": "Anubis",
+    "name_zh": "阿努比斯",
+    "paldb_id": "Anubis",
+    "paldex": "100",
+    "elements": [
+      "Ground"
+    ],
+    "roles": [
+      "combat",
+      "base_worker",
+      "handiwork",
+      "mining"
+    ],
+    "recommended_roles": [
+      "base_worker",
+      "combat"
+    ],
+    "priority": "S",
+    "note": "S 級工匠 + 高戰力，後期最常用"
+  },
+  {
+    "id": "jormuntide",
+    "name_en": "Jormuntide",
+    "name_zh": "覆海龍",
+    "paldb_id": "Umihebi",
+    "paldex": "101",
+    "elements": [
+      "Dragon",
+      "Water"
+    ],
+    "roles": [
+      "combat",
+      "mount"
+    ],
+    "recommended_roles": [
+      "combat",
+      "mount"
+    ],
+    "priority": "S",
+    "note": "龍/水 S 級頭目"
+  },
+  {
+    "id": "jormuntide_ignis",
+    "name_en": "Jormuntide Ignis",
+    "name_zh": "騰炎龍",
+    "paldb_id": "Umihebi_Fire",
+    "paldex": "101B",
+    "elements": [
+      "Dragon",
+      "Fire"
+    ],
+    "roles": [
+      "combat",
+      "mount"
+    ],
+    "recommended_roles": [
+      "combat",
+      "mount"
+    ],
+    "priority": "S",
+    "note": "龍/火 S 級頭目"
+  },
+  {
+    "id": "suzaku",
+    "name_en": "Suzaku",
+    "name_zh": "朱雀",
+    "paldb_id": "Suzaku",
+    "paldex": "102",
+    "elements": [
+      "Fire"
+    ],
+    "roles": [
+      "combat",
+      "mount"
+    ],
+    "recommended_roles": [
+      "combat",
+      "mount"
+    ],
+    "priority": "S",
+    "note": "火 S 級頭目"
+  },
+  {
+    "id": "suzaku_aqua",
+    "name_en": "Suzaku Aqua",
+    "name_zh": "清雀",
+    "paldb_id": "Suzaku_Water",
+    "paldex": "102B",
+    "elements": [
+      "Water"
+    ],
+    "roles": [
+      "combat",
+      "mount"
+    ],
+    "recommended_roles": [
+      "combat",
+      "mount"
+    ],
+    "priority": "S"
+  },
+  {
+    "id": "grizzbolt",
+    "name_en": "Grizzbolt",
+    "name_zh": "暴電熊",
+    "paldb_id": "ElecPanda",
+    "paldex": "103",
+    "elements": [
+      "Electric"
+    ],
+    "roles": [
+      "combat",
+      "base_worker"
+    ],
+    "recommended_roles": [
+      "combat"
+    ],
+    "priority": "S",
+    "note": "雷 S 級頭目"
+  },
+  {
+    "id": "lyleen",
+    "name_en": "Lyleen",
+    "name_zh": "百合女王",
+    "paldb_id": "LilyQueen",
+    "paldex": "104",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [
+      "base_worker",
+      "handiwork",
+      "support"
+    ],
+    "recommended_roles": [
+      "base_worker",
+      "support"
+    ],
+    "priority": "S",
+    "note": "S 級頭目，據點生產線好夥伴"
+  },
+  {
+    "id": "lyleen_noct",
+    "name_en": "Lyleen Noct",
+    "name_zh": "黑月女王",
+    "paldb_id": "LilyQueen_Dark",
+    "paldex": "104B",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [
+      "combat",
+      "base_worker"
+    ],
+    "recommended_roles": [
+      "combat"
+    ],
+    "priority": "S"
+  },
+  {
+    "id": "faleris",
+    "name_en": "Faleris",
+    "name_zh": "荷魯斯",
+    "paldb_id": "Horus",
+    "paldex": "105",
+    "elements": [
+      "Fire"
+    ],
+    "roles": [
+      "combat",
+      "mount"
+    ],
+    "recommended_roles": [
+      "combat",
+      "mount"
+    ],
+    "priority": "S"
+  },
+  {
+    "id": "faleris_aqua",
+    "name_en": "Faleris Aqua",
+    "name_zh": "伊西斯",
+    "paldb_id": "Horus_Water",
+    "paldex": "105B",
+    "elements": [
+      "Water"
+    ],
+    "roles": [
+      "combat",
+      "mount"
+    ],
+    "recommended_roles": [
+      "combat",
+      "mount"
+    ],
+    "priority": "S"
+  },
+  {
+    "id": "orserk",
+    "name_en": "Orserk",
+    "name_zh": "波魯傑克斯",
+    "paldb_id": "ThunderDragonMan",
+    "paldex": "106",
+    "elements": [
+      "Dragon",
+      "Electric"
+    ],
+    "roles": [
+      "combat",
+      "base_worker"
+    ],
+    "recommended_roles": [
+      "combat",
+      "base_worker"
+    ],
+    "priority": "S",
+    "note": "龍/雷 S 級頭目"
+  },
+  {
+    "id": "shadowbeak",
+    "name_en": "Shadowbeak",
+    "name_zh": "異構格里芬",
+    "paldb_id": "BlackGriffon",
+    "paldex": "107",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [
+      "combat"
+    ],
+    "recommended_roles": [
+      "combat"
+    ],
+    "priority": "S",
+    "note": "後期戰鬥泛用首選"
+  },
+  {
+    "id": "paladius",
+    "name_en": "Paladius",
+    "name_zh": "聖光騎士",
+    "paldb_id": "SaintCentaur",
+    "paldex": "108",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [
+      "combat",
+      "mount"
+    ],
+    "recommended_roles": [
+      "combat",
+      "mount"
+    ],
+    "priority": "S"
+  },
+  {
+    "id": "necromus",
+    "name_en": "Necromus",
+    "name_zh": "混沌騎士",
+    "paldb_id": "BlackCentaur",
+    "paldex": "109",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [
+      "combat",
+      "mount"
+    ],
+    "recommended_roles": [
+      "combat",
+      "mount"
+    ],
+    "priority": "S",
+    "note": "暗屬性雙頭坐騎"
+  },
+  {
+    "id": "frostallion",
+    "name_en": "Frostallion",
+    "name_zh": "喚冬獸",
+    "paldb_id": "IceHorse",
+    "paldex": "110",
+    "elements": [
+      "Ice"
+    ],
+    "roles": [
+      "combat",
+      "mount"
+    ],
+    "recommended_roles": [
+      "combat",
+      "mount"
+    ],
+    "priority": "S",
+    "note": "冰屬性 S 級頭目"
+  },
+  {
+    "id": "frostallion_noct",
+    "name_en": "Frostallion Noct",
+    "name_zh": "喚夜獸",
+    "paldb_id": "IceHorse_Dark",
+    "paldex": "110B",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [
+      "combat",
+      "mount"
+    ],
+    "recommended_roles": [
+      "combat",
+      "mount"
+    ],
+    "priority": "S",
+    "note": "暗屬性 S 級頭目"
+  },
+  {
+    "id": "jetragon",
+    "name_en": "Jetragon",
+    "name_zh": "空渦龍",
+    "paldb_id": "JetDragon",
+    "paldex": "111",
+    "elements": [
+      "Dragon"
+    ],
+    "roles": [
+      "combat",
+      "mount",
+      "mount_speed"
+    ],
+    "recommended_roles": [
+      "mount_speed",
+      "combat"
+    ],
+    "priority": "S",
+    "note": "最快飛行坐騎"
+  },
+  {
+    "id": "bellanoir",
+    "name_en": "Bellanoir",
+    "name_zh": "貝菈諾娃",
+    "paldb_id": "NightLady",
+    "paldex": "112",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [
+      "combat"
+    ],
+    "recommended_roles": [
+      "combat"
+    ],
+    "priority": "S",
+    "note": "Bellanoir Raid 系列 BOSS"
+  },
+  {
+    "id": "bellanoir_libero",
+    "name_en": "Bellanoir Libero",
+    "name_zh": "貝菈露潔",
+    "paldb_id": "NightLady_Dark",
+    "paldex": "112B",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [
+      "combat"
+    ],
+    "recommended_roles": [
+      "combat"
+    ],
+    "priority": "S"
+  },
+  {
+    "id": "selyne",
+    "name_en": "Selyne",
+    "name_zh": "輝月伊",
+    "paldb_id": "MoonQueen",
+    "paldex": "113",
+    "elements": [
+      "Dark",
+      "Neutral"
+    ],
+    "roles": [
+      "combat",
+      "support"
+    ],
+    "recommended_roles": [
+      "combat"
+    ],
+    "priority": "S",
+    "note": "Sakurajima/天墜之地系列 BOSS"
+  },
+  {
+    "id": "croajiro",
+    "name_en": "Croajiro",
+    "name_zh": "武道蛙",
+    "paldb_id": "KendoFrog",
+    "paldex": "114",
+    "elements": [
+      "Water"
+    ],
+    "roles": [
+      "combat"
+    ],
+    "recommended_roles": [
+      "combat"
+    ],
+    "priority": "A",
+    "note": "天墜之地新增"
+  },
+  {
+    "id": "croajiro_noct",
+    "name_en": "Croajiro Noct",
+    "name_zh": "極道蛙",
+    "paldb_id": "KendoFrog_Dark",
+    "paldex": "114B",
+    "elements": [
+      "Water",
+      "Dark"
+    ],
+    "roles": [
+      "combat"
+    ],
+    "recommended_roles": [
+      "combat"
+    ],
+    "priority": "A",
+    "note": "天墜之地新增"
+  },
+  {
+    "id": "lullu",
+    "name_en": "Lullu",
+    "name_zh": "春彩娘",
+    "paldb_id": "LeafPrincess",
+    "paldex": "115",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "shroomer",
+    "name_en": "Shroomer",
+    "name_zh": "菇咚",
+    "paldb_id": "MushroomDragon",
+    "paldex": "116",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "shroomer_noct",
+    "name_en": "Shroomer Noct",
+    "name_zh": "菇波",
+    "paldb_id": "MushroomDragon_Dark",
+    "paldex": "116B",
+    "elements": [
+      "Grass",
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "kikit",
+    "name_en": "Kikit",
+    "name_zh": "球犰",
+    "paldb_id": "SmallArmadillo",
+    "paldex": "117",
+    "elements": [
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "sootseer",
+    "name_en": "Sootseer",
+    "name_zh": "恐炬靈",
+    "paldb_id": "CandleGhost",
+    "paldex": "118",
+    "elements": [
+      "Dark",
+      "Fire"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "prixter",
+    "name_en": "Prixter",
+    "name_zh": "蠱刺妖",
+    "paldb_id": "ScorpionMan",
+    "paldex": "119",
+    "elements": [
+      "Dark",
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "knocklem",
+    "name_en": "Knocklem",
+    "name_zh": "泰鋒",
+    "paldb_id": "WingGolem",
+    "paldex": "120",
+    "elements": [
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "yakumo",
+    "name_en": "Yakumo",
+    "name_zh": "八雲犬",
+    "paldb_id": "GuardianDog",
+    "paldex": "121",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "dogen",
+    "name_en": "Dogen",
+    "name_zh": "汪宗師",
+    "paldb_id": "SifuDog",
+    "paldex": "122",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "dazemu",
+    "name_en": "Dazemu",
+    "name_zh": "戰冠雀",
+    "paldb_id": "FeatherOstrich",
+    "paldex": "123",
+    "elements": [
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "mimog",
+    "name_en": "Mimog",
+    "name_zh": "旺財",
+    "paldb_id": "MimicDog",
+    "paldex": "124",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "xenovader",
+    "name_en": "Xenovader",
+    "name_zh": "傑諾貝達",
+    "paldb_id": "DarkAlien",
+    "paldex": "125",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "xenogard",
+    "name_en": "Xenogard",
+    "name_zh": "傑諾路達",
+    "paldb_id": "WhiteAlienDragon",
+    "paldex": "126",
+    "elements": [
+      "Dragon"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "xenolord",
+    "name_en": "Xenolord",
+    "name_zh": "傑諾多蘭",
+    "paldb_id": "DarkMechaDragon",
+    "paldex": "127",
+    "elements": [
+      "Dark",
+      "Dragon"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "nitemary",
+    "name_en": "Nitemary",
+    "name_zh": "魅愛莉",
+    "paldb_id": "GhostRabbit",
+    "paldex": "128",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "starryon",
+    "name_en": "Starryon",
+    "name_zh": "夜冥駒",
+    "paldb_id": "NightBlueHorse",
+    "paldex": "129",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "silvegis",
+    "name_en": "Silvegis",
+    "name_zh": "艾基魯迦",
+    "paldb_id": "WhiteShieldDragon",
+    "paldex": "130",
+    "elements": [
+      "Dragon"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "smokie",
+    "name_en": "Smokie",
+    "name_zh": "墨丸",
+    "paldb_id": "BlackPuppy",
+    "paldex": "131",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "celesdir",
+    "name_en": "Celesdir",
+    "name_zh": "淨世鹿",
+    "paldb_id": "WhiteDeer",
+    "paldex": "132",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "omascul",
+    "name_en": "Omascul",
+    "name_zh": "面懼",
+    "paldb_id": "MysteryMask",
+    "paldex": "133",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "splatterina",
+    "name_en": "Splatterina",
+    "name_zh": "幽戀娜",
+    "paldb_id": "GrimGirl",
+    "paldex": "134",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "tarantriss",
+    "name_en": "Tarantriss",
+    "name_zh": "桃蛛娘",
+    "paldb_id": "PurpleSpider",
+    "paldex": "135",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "azurmane",
+    "name_en": "Azurmane",
+    "name_zh": "馭雷馬",
+    "paldb_id": "BlueThunderHorse",
+    "paldex": "136",
+    "elements": [
+      "Electric"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "bastigor",
+    "name_en": "Bastigor",
+    "name_zh": "霜牙王",
+    "paldb_id": "SnowTigerBeastman",
+    "paldex": "137",
+    "elements": [
+      "Ice"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "prunelia",
+    "name_en": "Prunelia",
+    "name_zh": "梅莉姆",
+    "paldb_id": "BlueberryFairy",
+    "paldex": "138",
+    "elements": [
+      "Grass",
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "nyafia",
+    "name_en": "Nyafia",
+    "name_zh": "妮瞅莎",
+    "paldb_id": "BadCatgirl",
+    "paldex": "139",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "gildane",
+    "name_en": "Gildane",
+    "name_zh": "金馳獸",
+    "paldb_id": "GoldenHorse",
+    "paldex": "140",
+    "elements": [
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "herbil",
+    "name_en": "Herbil",
+    "name_zh": "達鼠泥",
+    "paldb_id": "LeafMomonga",
+    "paldex": "141",
+    "elements": [
+      "Grass",
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "icelyn",
+    "name_en": "Icelyn",
+    "name_zh": "冰姬靈",
+    "paldb_id": "IceWitch",
+    "paldex": "142",
+    "elements": [
+      "Ice"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "frostplume",
+    "name_en": "Frostplume",
+    "name_zh": "白真雪雀",
+    "paldb_id": "SnowPeafowl",
+    "paldex": "143",
+    "elements": [
+      "Ice"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "palumba",
+    "name_en": "Palumba",
+    "name_zh": "咕咕桑葩",
+    "paldb_id": "TropicalOstrich",
+    "paldex": "144",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "braloha",
+    "name_en": "Braloha",
+    "name_zh": "梁葉龍",
+    "paldb_id": "Plesiosaur",
+    "paldex": "145",
+    "elements": [
+      "Grass",
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "munchill",
+    "name_en": "Munchill",
+    "name_zh": "肚肚鱷",
+    "paldb_id": "IceCrocodile",
+    "paldex": "146",
+    "elements": [
+      "Ice",
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "polapup",
+    "name_en": "Polapup",
+    "name_zh": "香草豹冰",
+    "paldb_id": "IceSeal",
+    "paldex": "147",
+    "elements": [
+      "Ice",
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "turtacle",
+    "name_en": "Turtacle",
+    "name_zh": "盔盔仔",
+    "paldb_id": "TentacleTurtle",
+    "paldex": "148",
+    "elements": [
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "turtacle_terra",
+    "name_en": "Turtacle Terra",
+    "name_zh": "金盔仔",
+    "paldb_id": "TentacleTurtle_Ground",
+    "paldex": "148B",
+    "elements": [
+      "Water",
+      "Ground"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "jellroy",
+    "name_en": "Jellroy",
+    "name_zh": "海月靈",
+    "paldb_id": "JellyfishGhost",
+    "paldex": "149",
+    "elements": [
+      "Water",
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "jelliette",
+    "name_en": "Jelliette",
+    "name_zh": "海月仙",
+    "paldb_id": "JellyfishFairy",
+    "paldex": "150",
+    "elements": [
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "gloopie",
+    "name_en": "Gloopie",
+    "name_zh": "墨沫姬",
+    "paldb_id": "OctopusGirl",
+    "paldex": "151",
+    "elements": [
+      "Water",
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "finsider",
+    "name_en": "Finsider",
+    "name_zh": "布偶鯊",
+    "paldb_id": "StuffedShark",
+    "paldex": "152",
+    "elements": [
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "finsider_ignis",
+    "name_en": "Finsider Ignis",
+    "name_zh": "粉粉布偶鯊",
+    "paldb_id": "StuffedShark_Fire",
+    "paldex": "152B",
+    "elements": [
+      "Water",
+      "Fire"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "ghangler",
+    "name_en": "Ghangler",
+    "name_zh": "冥燈魚",
+    "paldb_id": "GhostAnglerfish",
+    "paldex": "153",
+    "elements": [
+      "Dark",
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "ghangler_ignis",
+    "name_en": "Ghangler Ignis",
+    "name_zh": "炙燈魚",
+    "paldb_id": "GhostAnglerfish_Fire",
+    "paldex": "153B",
+    "elements": [
+      "Fire",
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "whalaska",
+    "name_en": "Whalaska",
+    "name_zh": "涼晶鯨",
+    "paldb_id": "IceNarwhal",
+    "paldex": "154",
+    "elements": [
+      "Ice",
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "whalaska_ignis",
+    "name_en": "Whalaska Ignis",
+    "name_zh": "桃晶鯨",
+    "paldb_id": "IceNarwhal_Fire",
+    "paldex": "154B",
+    "elements": [
+      "Ice",
+      "Fire"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "neptilius",
+    "name_en": "Neptilius",
+    "name_zh": "海皇鯨",
+    "paldb_id": "PoseidonOrca",
+    "paldex": "155",
+    "elements": [
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "hartalis",
+    "name_en": "Hartalis",
+    "name_zh": "默世鹿",
+    "paldb_id": "LegendDeer",
+    "paldex": "156",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "green_slime",
+    "name_en": "Green Slime",
+    "name_zh": "綠史萊姆",
+    "paldb_id": "YakushimaMonster001",
+    "elements": [
+      "Grass"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "blue_slime",
+    "name_en": "Blue Slime",
+    "name_zh": "藍史萊姆",
+    "paldb_id": "YakushimaMonster001_Blue",
+    "elements": [
+      "Water"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "red_slime",
+    "name_en": "Red Slime",
+    "name_zh": "紅史萊姆",
+    "paldb_id": "YakushimaMonster001_Red",
+    "elements": [
+      "Fire"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "purple_slime",
+    "name_en": "Purple Slime",
+    "name_zh": "紫史萊姆",
+    "paldb_id": "YakushimaMonster001_Purple",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "illuminant_slime",
+    "name_en": "Illuminant Slime",
+    "name_zh": "夜明史萊姆",
+    "paldb_id": "YakushimaMonster001_Pink",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "rainbow_slime",
+    "name_en": "Rainbow Slime",
+    "name_zh": "彩虹史萊姆",
+    "paldb_id": "YakushimaMonster001_Rainbow",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "enchanted_sword",
+    "name_en": "Enchanted Sword",
+    "name_zh": "附魔劍",
+    "paldb_id": "YakushimaMonster002",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "cave_bat",
+    "name_en": "Cave Bat",
+    "name_zh": "洞穴蝙蝠",
+    "paldb_id": "YakushimaMonster003",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "illuminant_bat",
+    "name_en": "Illuminant Bat",
+    "name_zh": "夜明蝙蝠",
+    "paldb_id": "YakushimaMonster003_Purple",
+    "elements": [
+      "Neutral"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "eye_of_cthulhu",
+    "name_en": "Eye of Cthulhu",
+    "name_zh": "克蘇魯之眼",
+    "paldb_id": "YakushimaBoss001",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  },
+  {
+    "id": "demon_eye",
+    "name_en": "Demon Eye",
+    "name_zh": "惡魔眼",
+    "paldb_id": "YakushimaBoss001_Small",
+    "elements": [
+      "Dark"
+    ],
+    "roles": [],
+    "recommended_roles": [],
+    "priority": "C"
+  }
+]

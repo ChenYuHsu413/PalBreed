@@ -1,0 +1,65 @@
+[
+  {
+    "id": "combat_general_late_game",
+    "label_zh": "戰鬥泛用型｜後期",
+    "label_en": "Late Game General Combat",
+    "role": "combat",
+    "passives": ["legend", "demon_god", "serenity", "vampiric"],
+    "alternatives": ["musclehead", "ferocious", "lucky", "diamond_body"],
+    "description_zh": "適合後期泛用戰鬥帕魯，兼顧輸出與穩定性。"
+  },
+  {
+    "id": "combat_dark_specialist",
+    "label_zh": "屬性特化｜暗系（魔女）",
+    "label_en": "Dark Element Specialist (Witch)",
+    "role": "combat",
+    "passives": ["legend", "demon_god", "witch", "serenity"],
+    "alternatives": ["invader", "vampiric", "musclehead"],
+    "description_zh": "適合喚夜獸、雷冥鳥、混沌騎士、魔淵龍等暗屬性帕魯。"
+  },
+  {
+    "id": "combat_fire_specialist",
+    "label_zh": "屬性特化｜火系（永炎）",
+    "label_en": "Fire Element Specialist (Eternal Flame)",
+    "role": "combat",
+    "passives": ["legend", "demon_god", "eternal_flame", "serenity"],
+    "alternatives": ["vampiric", "musclehead", "ferocious"],
+    "description_zh": "適合焰煌、騰炎龍、朱雀、荷魯斯等火屬性帕魯。"
+  },
+  {
+    "id": "combat_dragon_specialist",
+    "label_zh": "屬性特化｜龍系（侵略者）",
+    "label_en": "Dragon Element Specialist (Invader)",
+    "role": "combat",
+    "passives": ["legend", "demon_god", "invader", "serenity"],
+    "alternatives": ["vampiric", "musclehead", "eternal_flame"],
+    "description_zh": "適合空渦龍、覆海龍、騰炎龍、波魯傑克斯等龍屬性帕魯。"
+  },
+  {
+    "id": "combat_water_specialist",
+    "label_zh": "屬性特化｜水系（湖之主）",
+    "label_en": "Water Element Specialist (Lord of the Lake)",
+    "role": "combat",
+    "passives": ["legend", "demon_god", "lord_of_the_lake", "serenity"],
+    "alternatives": ["vampiric", "diamond_body", "musclehead"],
+    "description_zh": "適合清雀、伊西斯、覆海龍等水屬性帕魯。"
+  },
+  {
+    "id": "mount_speed",
+    "label_zh": "坐騎速度型",
+    "label_en": "Mount Speed",
+    "role": "mount_speed",
+    "passives": ["legend", "swift", "runner", "nimble"],
+    "alternatives": ["unlimited_stamina"],
+    "description_zh": "適合飛行、地面或水上坐騎，以移動速度為主。"
+  },
+  {
+    "id": "base_worker_max_speed",
+    "label_zh": "據點工作型｜續航工作",
+    "label_en": "Base Worker Sustained",
+    "role": "base_worker",
+    "passives": ["remarkable_craftsmanship", "artisan", "corporate_slave", "vampiric"],
+    "alternatives": ["work_slave", "mirror_water", "lucky", "diet_lover", "positive_thinker", "serious"],
+    "description_zh": "卓絕技藝 (+75%) + 工匠精神 (+50%) + 社畜 (+30%) + 吸血鬼（夜間不眠）。工作速度合計 +155% 並續航不停工。若 SAN 消耗成瓶頸，可改用 alt 的 工作狂 / 明鏡止水。"
+  }
+]

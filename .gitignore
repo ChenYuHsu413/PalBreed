@@ -1,0 +1,18 @@
+node_modules
+dist
+dist-ssr
+*.local
+.vite
+.DS_Store
+.env
+.env.local
+.env.*.local
+*.log
+*.tsbuildinfo
+.idea
+.vscode
+
+# 存檔匯入工具產出（含個人帕魯資料，勿提交）
+tools/palbreed_import.json
+tools/discovery_report.txt
+tools/passive_map.json

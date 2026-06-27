@@ -1,0 +1,603 @@
+[
+  {
+    "id": "legend",
+    "name_en": "Legend",
+    "name_zh": "傳說",
+    "category": "combat",
+    "tier": "S",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "attack": 20, "defense": 20, "move_speed": 15 },
+    "description_zh": "攻擊 +20%、防禦 +20%、移動速度 +15%（★★★★）"
+  },
+  {
+    "id": "demon_god",
+    "name_en": "Demon God",
+    "name_zh": "鬼神",
+    "category": "combat",
+    "tier": "S",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "attack": 30, "defense": 5 },
+    "description_zh": "攻擊 +30%、防禦 +5%（★★★★）"
+  },
+  {
+    "id": "vampiric",
+    "name_en": "Vampiric",
+    "name_zh": "吸血鬼",
+    "category": "combat",
+    "tier": "S",
+    "is_negative": false,
+    "is_recommended": true,
+    "description_zh": "吸收傷害回血、夜間不睡眠工作（★★★★）"
+  },
+  {
+    "id": "diamond_body",
+    "name_en": "Diamond Body",
+    "name_zh": "金剛之軀",
+    "category": "combat",
+    "tier": "S",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "defense": 30 },
+    "description_zh": "防禦 +30%（★★★★）"
+  },
+  {
+    "id": "swift",
+    "name_en": "Swift",
+    "name_zh": "神速",
+    "category": "mount",
+    "tier": "S",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "move_speed": 30 },
+    "description_zh": "移動速度 +30%（★★★★）"
+  },
+  {
+    "id": "lucky",
+    "name_en": "Lucky",
+    "name_zh": "稀有",
+    "category": "utility",
+    "tier": "S",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "work_speed": 15, "attack": 15 },
+    "description_zh": "工作速度 +15%、攻擊 +15%（★★★★ 通常為閃光/特殊個體攜帶）"
+  },
+  {
+    "id": "remarkable_craftsmanship",
+    "name_en": "Remarkable Craftsmanship",
+    "name_zh": "卓絕技藝",
+    "category": "work",
+    "tier": "S",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "work_speed": 75 },
+    "description_zh": "工作速度 +75%（★★★★ 最頂工作詞條）"
+  },
+  {
+    "id": "eternal_flame",
+    "name_en": "Eternal Flame",
+    "name_zh": "永炎",
+    "category": "element",
+    "tier": "S",
+    "is_negative": false,
+    "is_recommended": true,
+    "description_zh": "火屬性 +30%、雷屬性 +30%（★★★★）"
+  },
+  {
+    "id": "invader",
+    "name_en": "Invader",
+    "name_zh": "侵略者",
+    "category": "element",
+    "tier": "S",
+    "is_negative": false,
+    "is_recommended": true,
+    "description_zh": "暗屬性 +30%、龍屬性 +30%（★★★★）"
+  },
+  {
+    "id": "witch",
+    "name_en": "Siren of the Void",
+    "name_zh": "魔女",
+    "category": "element",
+    "tier": "S",
+    "is_negative": false,
+    "is_recommended": true,
+    "description_zh": "暗屬性 +30%、冰屬性 +30%（★★★★ 英文名稱待最終確認）"
+  },
+  {
+    "id": "lord_of_the_lake",
+    "name_en": "Lunker",
+    "name_zh": "湖之主",
+    "category": "element",
+    "tier": "S",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "defense": 20 },
+    "description_zh": "水屬性 +20%、冰屬性 +20%、防禦 +20%（★★★★）"
+  },
+  {
+    "id": "mirror_water",
+    "name_en": "Heart of the Immovable King",
+    "name_zh": "明鏡止水",
+    "category": "utility",
+    "tier": "S",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "sanity_consumption": -20 },
+    "description_zh": "減少 SAN 值下降速度 20%（★★★★ 最強 SAN 詞條）"
+  },
+  {
+    "id": "savior",
+    "name_en": "Savior",
+    "name_zh": "救世主",
+    "category": "combat",
+    "tier": "S",
+    "is_negative": false,
+    "is_recommended": true,
+    "description_zh": "★★★★ 天墜之地系列新增 S 級詞條（詳細效果請參考 PalDB 個別頁面）"
+  },
+  {
+    "id": "eternal_engine",
+    "name_en": "Eternal Engine",
+    "name_zh": "永動機",
+    "category": "work",
+    "tier": "S",
+    "is_negative": false,
+    "is_recommended": true,
+    "description_zh": "★★★★ 天墜之地系列新增 S 級詞條，與耐久 / 體力 / 工作續航相關（效果以 PalDB 為準）"
+  },
+  {
+    "id": "tempest_fury",
+    "name_en": "Tempest Fury",
+    "name_zh": "疾風怒濤",
+    "category": "combat",
+    "tier": "S",
+    "is_negative": false,
+    "is_recommended": true,
+    "description_zh": "★★★★ 天墜之地系列新增 S 級詞條（效果以 PalDB 為準）"
+  },
+  {
+    "id": "king_of_waves",
+    "name_en": "King of the Waves",
+    "name_zh": "破浪王者",
+    "category": "element",
+    "tier": "S",
+    "is_negative": false,
+    "is_recommended": true,
+    "description_zh": "★★★★ 天墜之地系列新增 S 級水系相關詞條（效果以 PalDB 為準）"
+  },
+  {
+    "id": "mastery_of_fasting",
+    "name_en": "Mastery of Fasting",
+    "name_zh": "極限絕食",
+    "category": "utility",
+    "tier": "S",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "food_consumption": -25 },
+    "description_zh": "★★★★ 大幅降低飽食消耗（具體數值以 PalDB 為準）"
+  },
+  {
+    "id": "blood_is_fuel",
+    "name_en": "Blood Is Fuel",
+    "name_zh": "血液燃料",
+    "category": "combat",
+    "tier": "S",
+    "is_negative": false,
+    "is_recommended": true,
+    "description_zh": "★★★★ 天墜之地系列新增 S 級戰鬥詞條（效果以 PalDB 為準）"
+  },
+
+  {
+    "id": "ferocious",
+    "name_en": "Ferocious",
+    "name_zh": "兇猛",
+    "category": "combat",
+    "tier": "A",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "attack": 20 },
+    "description_zh": "攻擊 +20%（★★★）"
+  },
+  {
+    "id": "serenity",
+    "name_en": "Serenity",
+    "name_zh": "沈著冷靜",
+    "category": "combat",
+    "tier": "A",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "attack": 10 },
+    "description_zh": "技能冷卻 -30%、攻擊 +10%（★★★）"
+  },
+  {
+    "id": "tough_body",
+    "name_en": "Burly Body",
+    "name_zh": "頑強肉體",
+    "category": "combat",
+    "tier": "A",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "defense": 20 },
+    "description_zh": "防禦 +20%（★★★）"
+  },
+  {
+    "id": "artisan",
+    "name_en": "Artisan",
+    "name_zh": "工匠精神",
+    "category": "work",
+    "tier": "A",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "work_speed": 50 },
+    "description_zh": "工作速度 +50%（★★★）"
+  },
+  {
+    "id": "work_slave",
+    "name_en": "Workaholic",
+    "name_zh": "工作狂",
+    "category": "work",
+    "tier": "A",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "sanity_consumption": -15 },
+    "description_zh": "減少 SAN 值下降速度 15%（★★★ 續航類關鍵詞條）"
+  },
+  {
+    "id": "runner",
+    "name_en": "Runner",
+    "name_zh": "運動健將",
+    "category": "mount",
+    "tier": "A",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "move_speed": 20 },
+    "description_zh": "移動速度 +20%（★★★）"
+  },
+  {
+    "id": "unlimited_stamina",
+    "name_en": "Infinite Stamina",
+    "name_zh": "無限精力",
+    "category": "mount",
+    "tier": "A",
+    "is_negative": false,
+    "is_recommended": true,
+    "description_zh": "騎乘耐力 +50%（★★★）"
+  },
+  {
+    "id": "diet_lover",
+    "name_en": "Diet Lover",
+    "name_zh": "節食大師",
+    "category": "utility",
+    "tier": "A",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "food_consumption": -15 },
+    "description_zh": "飽食消耗 -15%（★★★）"
+  },
+
+  {
+    "id": "flame_emperor",
+    "name_en": "Flame Emperor",
+    "name_zh": "炎帝",
+    "category": "element",
+    "tier": "A",
+    "is_negative": false,
+    "is_recommended": true,
+    "description_zh": "火屬性 +20%（★★★）"
+  },
+  {
+    "id": "ice_emperor",
+    "name_en": "Ice Emperor",
+    "name_zh": "冰帝",
+    "category": "element",
+    "tier": "A",
+    "is_negative": false,
+    "is_recommended": true,
+    "description_zh": "冰屬性 +20%（★★★）"
+  },
+  {
+    "id": "earth_emperor",
+    "name_en": "Earth Emperor",
+    "name_zh": "岩帝",
+    "category": "element",
+    "tier": "A",
+    "is_negative": false,
+    "is_recommended": true,
+    "description_zh": "地屬性 +20%（★★★）"
+  },
+  {
+    "id": "lord_of_the_sea",
+    "name_en": "Lord of the Sea",
+    "name_zh": "海皇",
+    "category": "element",
+    "tier": "A",
+    "is_negative": false,
+    "is_recommended": true,
+    "description_zh": "水屬性 +20%（★★★）"
+  },
+  {
+    "id": "divine_dragon",
+    "name_en": "Divine Dragon",
+    "name_zh": "神龍",
+    "category": "element",
+    "tier": "A",
+    "is_negative": false,
+    "is_recommended": true,
+    "description_zh": "龍屬性 +20%（★★★ 空渦龍等龍系專屬推薦）"
+  },
+  {
+    "id": "lord_of_the_underworld",
+    "name_en": "Lord of the Underworld",
+    "name_zh": "冥王",
+    "category": "element",
+    "tier": "A",
+    "is_negative": false,
+    "is_recommended": true,
+    "description_zh": "暗屬性 +20%（★★★）"
+  },
+  {
+    "id": "spirit_emperor",
+    "name_en": "Spirit Emperor",
+    "name_zh": "精靈王",
+    "category": "element",
+    "tier": "A",
+    "is_negative": false,
+    "is_recommended": true,
+    "description_zh": "草屬性 +20%（★★★）"
+  },
+  {
+    "id": "lord_of_lightning",
+    "name_en": "Lord of Lightning",
+    "name_zh": "雷帝",
+    "category": "element",
+    "tier": "A",
+    "is_negative": false,
+    "is_recommended": true,
+    "description_zh": "雷屬性 +20%（★★★）"
+  },
+  {
+    "id": "celestial_emperor",
+    "name_en": "Celestial Emperor",
+    "name_zh": "聖天",
+    "category": "element",
+    "tier": "A",
+    "is_negative": false,
+    "is_recommended": true,
+    "description_zh": "無屬性 +20%（★★★）"
+  },
+
+  {
+    "id": "musclehead",
+    "name_en": "Musclehead",
+    "name_zh": "腦筋",
+    "category": "combat",
+    "tier": "B",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "attack": 30, "work_speed": -50 },
+    "description_zh": "攻擊 +30%、工作速度 -50%（★★ 慢攻爆發型）"
+  },
+
+  {
+    "id": "serious",
+    "name_en": "Serious",
+    "name_zh": "認真",
+    "category": "work",
+    "tier": "C",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "work_speed": 20 },
+    "description_zh": "工作速度 +20%（★）"
+  },
+  {
+    "id": "corporate_slave",
+    "name_en": "Work Slave",
+    "name_zh": "社畜",
+    "category": "work",
+    "tier": "C",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "work_speed": 30, "attack": -30 },
+    "description_zh": "工作速度 +30%、攻擊 -30%（★ 純工作用）"
+  },
+  {
+    "id": "nimble",
+    "name_en": "Nimble",
+    "name_zh": "靈巧",
+    "category": "mount",
+    "tier": "C",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "move_speed": 10 },
+    "description_zh": "移動速度 +10%（★）"
+  },
+  {
+    "id": "brave",
+    "name_en": "Brave",
+    "name_zh": "勇敢",
+    "category": "combat",
+    "tier": "C",
+    "is_negative": false,
+    "is_recommended": false,
+    "effects": { "attack": 10 },
+    "description_zh": "攻擊 +10%（★）"
+  },
+  {
+    "id": "hard_skin",
+    "name_en": "Hard Skin",
+    "name_zh": "堅硬皮膚",
+    "category": "combat",
+    "tier": "C",
+    "is_negative": false,
+    "is_recommended": false,
+    "effects": { "defense": 10 },
+    "description_zh": "防禦 +10%（★）"
+  },
+  {
+    "id": "zen",
+    "name_en": "Zen Mind",
+    "name_zh": "禪境",
+    "category": "element",
+    "tier": "C",
+    "is_negative": false,
+    "is_recommended": false,
+    "description_zh": "無屬性 +10%（★）"
+  },
+  {
+    "id": "positive_thinker",
+    "name_en": "Positive Thinker",
+    "name_zh": "正向思考",
+    "category": "utility",
+    "tier": "C",
+    "is_negative": false,
+    "is_recommended": true,
+    "effects": { "sanity_consumption": -10 },
+    "description_zh": "減少 SAN 值下降速度 10%（★）"
+  },
+  {
+    "id": "sadistic",
+    "name_en": "Sadist",
+    "name_zh": "虐待狂",
+    "category": "combat",
+    "tier": "C",
+    "is_negative": false,
+    "is_recommended": false,
+    "effects": { "attack": 15, "defense": -15 },
+    "description_zh": "攻擊 +15%、防禦 -15%（★ 混合型）"
+  },
+  {
+    "id": "masochistic",
+    "name_en": "Masochist",
+    "name_zh": "受虐狂",
+    "category": "combat",
+    "tier": "C",
+    "is_negative": false,
+    "is_recommended": false,
+    "effects": { "attack": -15, "defense": 15 },
+    "description_zh": "防禦 +15%、攻擊 -15%（★ 混合型）"
+  },
+
+  {
+    "id": "coward",
+    "name_en": "Coward",
+    "name_zh": "膽小",
+    "category": "negative",
+    "tier": "F",
+    "is_negative": true,
+    "is_recommended": false,
+    "effects": { "attack": -10 },
+    "description_zh": "攻擊 -10%（負面 -1）"
+  },
+  {
+    "id": "glutton",
+    "name_en": "Glutton",
+    "name_zh": "貪吃",
+    "category": "negative",
+    "tier": "F",
+    "is_negative": true,
+    "is_recommended": false,
+    "effects": { "food_consumption": 10 },
+    "description_zh": "飽食消耗 +10%（負面 -1）"
+  },
+  {
+    "id": "clumsy",
+    "name_en": "Clumsy",
+    "name_zh": "笨手笨腳",
+    "category": "negative",
+    "tier": "F",
+    "is_negative": true,
+    "is_recommended": false,
+    "effects": { "work_speed": -10 },
+    "description_zh": "工作速度 -10%（負面 -1）"
+  },
+  {
+    "id": "emotional_instability",
+    "name_en": "Mentally Unstable",
+    "name_zh": "情緒不穩",
+    "category": "negative",
+    "tier": "F",
+    "is_negative": true,
+    "is_recommended": false,
+    "effects": { "sanity_consumption": 10 },
+    "description_zh": "SAN 值下降速度 +10%（負面 -1）"
+  },
+  {
+    "id": "shabby",
+    "name_en": "Shabby",
+    "name_zh": "寒酸",
+    "category": "negative",
+    "tier": "F",
+    "is_negative": true,
+    "is_recommended": false,
+    "effects": { "defense": -10 },
+    "description_zh": "防禦 -10%（負面 -1）"
+  },
+  {
+    "id": "sickly",
+    "name_en": "Sickly",
+    "name_zh": "弱不禁風",
+    "category": "negative",
+    "tier": "F",
+    "is_negative": true,
+    "is_recommended": false,
+    "effects": { "hp": -10 },
+    "description_zh": "HP -10%（負面 -1）"
+  },
+  {
+    "id": "destructive_desire",
+    "name_en": "Destructive",
+    "name_zh": "毀滅欲望",
+    "category": "negative",
+    "tier": "F",
+    "is_negative": true,
+    "is_recommended": false,
+    "effects": { "sanity_consumption": 15 },
+    "description_zh": "SAN 值下降速度 +15%（負面 -2）"
+  },
+  {
+    "id": "bottomless_stomach",
+    "name_en": "Bottomless Stomach",
+    "name_zh": "無底之胃",
+    "category": "negative",
+    "tier": "F",
+    "is_negative": true,
+    "is_recommended": false,
+    "effects": { "food_consumption": 15 },
+    "description_zh": "飽食消耗 +15%（負面 -2）"
+  },
+  {
+    "id": "lazy",
+    "name_en": "Slacker",
+    "name_zh": "偷懶成癮",
+    "category": "negative",
+    "tier": "F",
+    "is_negative": true,
+    "is_recommended": false,
+    "effects": { "work_speed": -30 },
+    "description_zh": "工作速度 -30%（負面 -3）"
+  },
+  {
+    "id": "brittle_bones",
+    "name_en": "Brittle",
+    "name_zh": "骨質疏鬆",
+    "category": "negative",
+    "tier": "F",
+    "is_negative": true,
+    "is_recommended": false,
+    "effects": { "defense": -20 },
+    "description_zh": "防禦 -20%（負面 -3）"
+  },
+  {
+    "id": "pessimist",
+    "name_en": "Pacifist",
+    "name_zh": "消極主義者",
+    "category": "negative",
+    "tier": "F",
+    "is_negative": true,
+    "is_recommended": false,
+    "effects": { "attack": -20 },
+    "description_zh": "攻擊 -20%（負面 -3）"
+  }
+]
