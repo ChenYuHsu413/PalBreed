@@ -17,6 +17,12 @@ export default function PlannerPage() {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [tab, setTab] = useState<Tab>('routes');
 
+  // AI 推薦點選後：切到配種路線分頁並捲到上方的目標規劃
+  const goToRoutesTop = () => {
+    setTab('routes');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="mx-auto max-w-7xl space-y-6 px-4 py-8">
       <header className="flex items-start justify-between gap-3">
@@ -59,7 +65,7 @@ export default function PlannerPage() {
       {tab === 'library' && (
         <div className="space-y-6">
           <MaterialLibrarySection />
-          <AdvisorSection />
+          <AdvisorSection onPickTarget={goToRoutesTop} />
         </div>
       )}
 
@@ -70,7 +76,7 @@ export default function PlannerPage() {
             <CoverageSection />
             <MergePlanSection />
           </div>
-          <AdvisorSection />
+          <AdvisorSection onPickTarget={goToRoutesTop} />
         </div>
       )}
 

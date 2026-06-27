@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useOwnedPalsStore } from '../../store/useOwnedPalsStore';
+import { useTargetStore } from '../../store/useTargetStore';
 import {
   useSettingsStore,
   activeProviderCreds,
@@ -106,10 +107,22 @@ function extractJson(text: string): string {
   return a >= 0 && b > a ? s.slice(a, b + 1) : s;
 }
 
-export function AdvisorSection() {
+export function AdvisorSection({
+  onPickTarget,
+}: {
+  onPickTarget?: () => void;
+}) {
   const pals = useOwnedPalsStore((s) => s.pals);
+  const setTargetPal = useTargetStore((s) => s.setTargetPal);
+  const setTargetPassives = useTargetStore((s) => s.setTargetPassives);
   const { settings } = useSettingsStore();
   const creds = activeProviderCreds(settings);
+
+  const pickTarget = (palId: string, passiveIds: string[]) => {
+    setTargetPal(palId);
+    setTargetPassives(passiveIds.slice(0, 4));
+    onPickTarget?.();
+  };
 
   const [loading, setLoading] = useState(false);
   const [advice, setAdvice] = useState<Advice | null>(null);
@@ -170,7 +183,7 @@ export function AdvisorSection() {
             </p>
           )}
           {advice.groups.map((g, gi) => (
-            <RoleGroup key={gi} group={g} />
+            <RoleGroup key={gi} group={g} onPick={pickTarget} />
           ))}
         </div>
       )}
@@ -190,7 +203,13 @@ export function AdvisorSection() {
   );
 }
 
-function RoleGroup({ group }: { group: RecGroup }) {
+function RoleGroup({
+  group,
+  onPick,
+}: {
+  group: RecGroup;
+  onPick: (palId: string, passiveIds: string[]) => void;
+}) {
   // 對得到資料的帕魯才顯示（防 AI 漏網的幻覺名稱）
   const valid = (group.pals ?? [])
     .map((rp) => ({ rp, pal: PAL_BY_ZH.get(rp.name) }))
@@ -201,39 +220,51 @@ function RoleGroup({ group }: { group: RecGroup }) {
     <div>
       <h3 className="mb-1.5 text-sm font-semibold text-accent">{group.role}</h3>
       <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-        {valid.map(({ rp, pal }) => (
-          <div
-            key={pal.id}
-            className="rounded-lg bg-slate-900/40 p-2.5 ring-1 ring-slate-800"
-          >
-            <div className="mb-1 flex items-center gap-2">
-              <PalAvatar palId={pal.id} size={32} />
-              <span className="text-sm font-medium text-slate-100">
-                {pal.name_zh}
-              </span>
-            </div>
-            {(() => {
-              // 只顯示對得到我們資料的詞條；對不到的(AI 自編)直接丟
-              const resolved = (rp.passives ?? [])
-                .map(resolvePassive)
-                .filter((x): x is NonNullable<typeof x> => !!x);
-              if (resolved.length === 0) return null;
-              return (
+        {valid.map(({ rp, pal }) => {
+          // 只顯示對得到我們資料的詞條；對不到的(AI 自編)直接丟
+          const resolved = (rp.passives ?? [])
+            .map(resolvePassive)
+            .filter((x): x is NonNullable<typeof x> => !!x);
+          return (
+            <div
+              key={pal.id}
+              role="button"
+              tabIndex={0}
+              onClick={() => onPick(pal.id, resolved.map((pv) => pv.id))}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  onPick(pal.id, resolved.map((pv) => pv.id));
+                }
+              }}
+              title="設為目標規劃"
+              className="group cursor-pointer rounded-lg bg-slate-900/40 p-2.5 text-left ring-1 ring-slate-800 transition hover:bg-slate-800/60 hover:ring-accent/50"
+            >
+              <div className="mb-1 flex items-center gap-2">
+                <PalAvatar palId={pal.id} size={32} />
+                <span className="text-sm font-medium text-slate-100">
+                  {pal.name_zh}
+                </span>
+                <span className="ml-auto text-[11px] text-accent opacity-0 transition group-hover:opacity-100">
+                  設為目標 →
+                </span>
+              </div>
+              {resolved.length > 0 && (
                 <div className="mb-1 flex flex-wrap gap-1">
                   {resolved.map((pv) => (
                     <PassiveTag key={pv.id} passive={pv} fallbackId={pv.id} />
                   ))}
                 </div>
-              );
-            })()}
-            {rp.reason && (
-              <p className="text-[11px] text-slate-300">{rp.reason}</p>
-            )}
-            {rp.obtain && (
-              <p className="text-[11px] text-slate-500">取得：{rp.obtain}</p>
-            )}
-          </div>
-        ))}
+              )}
+              {rp.reason && (
+                <p className="text-[11px] text-slate-300">{rp.reason}</p>
+              )}
+              {rp.obtain && (
+                <p className="text-[11px] text-slate-500">取得：{rp.obtain}</p>
+              )}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
