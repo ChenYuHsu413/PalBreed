@@ -1,58 +1,28 @@
 import { useState } from 'react';
 import { useOwnedPalsStore } from '../../store/useOwnedPalsStore';
-import { useTargetStore } from '../../store/useTargetStore';
 import {
   useSettingsStore,
   activeProviderCreds,
 } from '../../store/useSettingsStore';
-import { getPal, getPassive } from '../../data';
+import { getPal } from '../../data';
 import type { OwnedPal } from '../../types/owned';
 import { getAdvice } from '../../services/advisor';
 import { Button } from '../common/Button';
 
-const GENDER_ZH = { male: '公', female: '母', unknown: '未知' } as const;
-const MAX_PALS = 300;
-
-function buildPrompt(
-  pals: OwnedPal[],
-  targetPalId: string | null,
-  targetPassives: string[]
-): string {
-  const targetName = targetPalId
-    ? getPal(targetPalId)?.name_zh ?? targetPalId
-    : '未設定';
-  const targetPassiveNames =
-    targetPassives.length > 0
-      ? targetPassives.map((id) => getPassive(id)?.name_zh ?? id).join('、')
-      : '未設定';
-
-  const lines = pals.slice(0, MAX_PALS).map((p, i) => {
-    const name = getPal(p.pal_id)?.name_zh ?? p.pal_id;
-    const passives =
-      p.passives.map((id) => getPassive(id)?.name_zh ?? id).join('、') || '無詞條';
-    const flags = [p.is_finished ? '成品' : '', ...p.tags].filter(Boolean);
-    return `${i + 1}. ${name}(${GENDER_ZH[p.gender]})：${passives}${
-      flags.length ? ` [${flags.join('/')}]` : ''
-    }`;
-  });
-
-  const more = pals.length > MAX_PALS ? `\n（其餘 ${pals.length - MAX_PALS} 隻略過）` : '';
+function buildPrompt(pals: OwnedPal[]): string {
+  // 去重的已擁有物種清單（推薦缺口只需知道「有哪些物種」）
+  const species = [...new Set(pals.map((p) => getPal(p.pal_id)?.name_zh ?? p.pal_id))];
 
   return [
-    '== 培育目標 ==',
-    `目標物種：${targetName}`,
-    `目標詞條：${targetPassiveNames}`,
+    `== 我已擁有的帕魯物種（${species.length} 種）==`,
+    species.length ? species.join('、') : '（目前沒有任何帕魯）',
     '',
-    `== 我的素材庫（共 ${pals.length} 隻）==`,
-    lines.join('\n') + more,
-    '',
-    '請依上述素材與目標給我建議。',
+    '請推薦我「還沒有」的社群公認強力帕魯與其完美詞條組合，分戰鬥／坐騎／據點工作三類。',
   ].join('\n');
 }
 
 export function AdvisorSection() {
   const pals = useOwnedPalsStore((s) => s.pals);
-  const { targetPalId, targetPassives } = useTargetStore();
   const { settings } = useSettingsStore();
   const creds = activeProviderCreds(settings);
 
@@ -64,7 +34,7 @@ export function AdvisorSection() {
     setLoading(true);
     setError(null);
     try {
-      const prompt = buildPrompt(pals, targetPalId, targetPassives);
+      const prompt = buildPrompt(pals);
       const text = await getAdvice(prompt, creds);
       setAdvice(text);
     } catch (err) {
@@ -78,27 +48,21 @@ export function AdvisorSection() {
     <section className="space-y-3 rounded-2xl bg-bg-panel p-5 shadow-lg ring-1 ring-white/5">
       <header className="flex items-start justify-between gap-3">
         <div>
-          <h2 className="text-lg font-semibold text-slate-100">⑤ AI 配種建議</h2>
+          <h2 className="text-lg font-semibold text-slate-100">⑤ AI 強力推薦</h2>
           <p className="text-xs text-slate-400">
-            讀取你的素材庫與目標，請 AI 給缺口分析、清理建議與下一步配種。
+            比對你的收藏，推薦你「還沒有」的社群公認強力帕魯與完美詞條組合。
           </p>
         </div>
         <Button
           variant="primary"
           onClick={run}
-          disabled={loading || pals.length === 0 || !creds.apiKey}
+          disabled={loading || !creds.apiKey}
         >
-          {loading ? `思考中…（${creds.label}）` : '✨ 產生建議'}
+          {loading ? `思考中…（${creds.label}）` : '✨ 產生推薦'}
         </Button>
       </header>
 
-      {pals.length === 0 && (
-        <p className="rounded-md bg-slate-900/40 px-3 py-2 text-xs text-slate-400 ring-1 ring-slate-800">
-          素材庫是空的，先到「素材庫」分頁建立素材後再來。
-        </p>
-      )}
-
-      {pals.length > 0 && !creds.apiKey && (
+      {!creds.apiKey && (
         <p className="rounded-md bg-amber-500/10 px-3 py-2 text-xs text-amber-200 ring-1 ring-amber-500/30">
           尚未設定 {creds.label} API Key，請到右上「⚙ 設定」填入（與截圖辨識共用）。
         </p>
