@@ -1,4 +1,5 @@
 # PalBreed — Palworld 完美詞條培育規劃器
+<a href="https://chenyuhsu413.github.io/PalBreed/">Demo Link</a>
 
 幫《幻獸帕魯 Palworld》後期玩家規劃「完美詞條」培育路線的純前端工具。
 登錄手上的素材帕魯 → 選目標物種與想要的被動詞條 → 自動算出配種組合、合併路線、繼承機率與所需蛋數。
